@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Advanced Search</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=#>About</a></li>
+                <li><a href=#>Store</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Google Search</a></li>
+                <li class="menu-bg"><img class="menu-button"
+                src="images/menu.png" alt="menu button"></li>
+                <li><img class="profile-pic" src="images/profile.png" width= "30"
+                height="30" alt="profile pic"></li>
+            </ul>
+        </nav>
+        <h1 class="page-title">Advanced Search</h1> 
+    </header>
+    <main class="advanced-main">
+       
+        <div class="advanced-search-container">
+            <form class="advanced" action="https://www.google.com/search" method="GET">
+                <input type="hidden" name="hl" value="en"> <!-- Set language to English -->
+                <div class="search-option">
+                    <label for="all-words">All these words:</label>
+                    <input id="advanced" class="search-advanced" type="text" name="as_q" id="all-words">
+                </div>
+                <div class="search-option">
+                    <label for="exact-phrase">Exact word or phrase:</label>
+                    <input  id="advanced" class="search-advanced" type="text" name="as_epq" id="exact-phrase">
+                </div>
+                <div class="search-option">
+                    <label for="any-words">Any of these words:</label>
+                    <input id="advanced" class="search-advanced" type="text" name="as_oq" id="any-words">
+                </div>
+                <div class="search-option">
+                    <label for="none-words">None of these words:</label>
+                    <input id="advanced" class="search-advanced" type="text" name="as_eq" id="none-words">
+                </div>
+                <input class="submit-advanced" id="advanced" type="submit" value="Advanced search" id="search-button">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
